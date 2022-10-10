@@ -410,7 +410,7 @@ Pada baris ke 2 setTimeout digunakan untuk menunda eksekusi dalam satuan milisec
 
 Perhatikan bahwa outputnya tidak berurutan sesuai input (kode). Karena cara kerja asynchronous adalah berdasarkan waktu proses. Jika ada salah satu eksekusi membutuhkan proses yang agak lama, maka sembari menunggu proses tersebut javascript mengeksekusi perintah selanjutnya.
 
-#### Promises
+#### Promise
 
 Dalam dunia promise analogi di atas juga sama, ketika melakukan request asynchronous seperti Ajax, maka ada 3 kemungkinan state :
 
