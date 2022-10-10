@@ -204,8 +204,189 @@ Seperti tipe data dan variabel pada umumnya, kita dapat mengupdate data pada Arr
 
 
 ### MULTIDIMENSIONAL ARRAY
+- Multidimensional Array bisa dianalogikan dengan array of array. Ada array didalam array.
+  
+  ![arrayMultidimensional](img/arrayMultidimensional.png)
+
+  Output:
+
+  ![outputArrayMultidimensional](img/outputArrayMultidimensional.png)
+
+- Cara akses index multidimensional array
+  
+  ![aksesArrayMultidimensional](img/aksesArrayMulti.png)
+
+- Sama seperti array satu dimensi, multidimensional array juga dapat menggunakan Property dan Method built-in Array.
+
+  ![ArrayMultidimensionalWithPropertynMethod](img/pushArrayMulti.png)
+
+- Operation using map in multidimensional array
+
+  ![mapInMultidimensionalArray](img/mapArrayMulti.png)
+
+- Looping For Multidimensional Array
+  
+  ![LoopingMultidimensionalArray](img/contohLoopArrayMulti.png)
+
+  ![LoopingForMultidimensionalArray](img/usingForLoopArrayMulti.png)
+  
 
 ### OBJECT
+
+#### Apa itu object?
+
+- Object adalah sebuah tipe data pada variabel yang menyimpan properti dan fungsi (method).
+- Properti adalah data lengkap dari sebuah object.
+- Method adalah action dari sebuah object. Apa saja yang dapat dilakukan dari suatu object.
+- Contoh objek mobil dengan properti nilai dan method
+
+  ![contohObject](img/contohObject.png)
+
+#### Membuat Sebuah Object
+
+- Sama seperti tipe data number, string, boolean, null, undefined, array. Object dapat diassign kedalam sebuah variabel.
+  
+  ![membuatObject](img/membuatObject.png)
+
+  ![membuatObjectWithProperty](img/objectWithProperty.png)
+
+- Sama seperti array, didalam object kita dapat menyimpan properti dengan tipe data apapun.
+
+#### Mengakses Object dan Property Object
+
+- Mengakses seluruh Object
+  
+  ![aksesSeluruhObject](img/aksesObject.png)
+
+  Output:
+
+  ![outputAksesSeluruhObject](img/outputAksesObject.png)
+
+- Menggunakan single quote pada key jika menggunakan spasi seperti `‘current address’`
+  
+  ![sigleCuote](img/sigleCuote.png)
+
+- Mengakses properti object
+  
+  ![aksesPropertyObject](img/akseSProp.png)
+
+  Output:
+
+  ![outputAksesPropertyObject](img/outputAkses.png)
+
+- Bisa menggunakan bracket notation saat memanggil properti dari sebuah object.
+  
+  ![bracketNotation](img/bracketNotation.png)
+
+#### Update Object
+
+- Object dapat mengupdate value dari key yang sudah tersedia
+- Object dapat menambahkan key dan value baru
+  
+  ![UpdateObject](img/UpdateDataPadaObject.png)
+
+#### Delete Object Property
+
+-  Menghapus properti dari object bisa menggunakan delete operator.
+  
+   ![DeleteObject](img/deleteObject.png)
+
+#### Method
+
+- Method adalah value yang kita masukkan pada property berupa function.
+- Misal akan membuat method untuk greeting pada aplikasi ecommerce. Terdapat 2 method pada object greeting.
+  
+  ![method](img/MethodObject.png)
+
+#### Nested Object
+
+- Object yang berasal dari turunan object lainnya.
+
+  ![NestedObject](img/nesteedObject.png)
+
+#### Passed By Reference
+
+- mengubah data yang ada pada object melalui sebuah function dan memasukkan object sebagai parameter function.
+
+  Contoh mengubah data object number dengan sebuah function changeData
+
+  ![PassByReference](img/passByReference.png)
+
+#### Looping Object
+
+- Jika ingin menampilkan seluruh object properti, bisa menggunakan looping.
+  
+  ![PenulisanLooping](img/penulisanLoop.png)
+
+  ![Looping](img/looping.png)
+
+#### Array of Object
+
+- Contoh looping pada Data array of object students
+  
+  ![ArrayOfObject](img/arrayObject.png)
+
+  Output:
+
+  ![OutputArrayOfObject](img/outputArrayObject.png)
+
+
 ### RECURSIVE
+
+- Recursive adalah function yang memanggil dirinya sendiri sampai kondisi tertentu.
+- Recursive kebanyakan digunakan untuk case matematika, fisika, kimia, dan yang berhubungan dengan calculation.
+- Struktur Recursive
+  
+  ![Recursive](img/StrukturRecursive.png)
+
+- Recursive akan berhenti memanggil dirinya sendiri jika kondisi terpenuhi.
+  
+  ![Recursive](img/recursive2.png)
+
+- Ciri Recursive:
+  - Fungsi rekursif selalu memiliki kondisi yang menyatakan kapan fungsi tersebut berhenti. Kondisi ini harus dapat dibuktikan akan tercapai, karena jika tidak tercapai maka kita tidak dapat membuktikan bahwa fungsi akan berhenti, yang berarti algoritma kita tidak benar.
+  - Fungsi rekursif selalu memanggil dirinya sendiri sambil mengurangi atau memecahkan data masukan setiap panggilannya. Hal ini penting diingat, karena tujuan utama dari rekursif ialah memecahkan masalah dengan mengurangi masalah tersebut menjadi masalah-masalah kecil.
+
+- Contoh Recursive:
+  - Fungsi rekursif menghitung mundur number
+  
+    ![ContohKasusRecursive1](img/contohKasusRecursive1.png)
+
+  - Mencari hasil dari nilai pangkat dengan rekursif
+  
+    ![ContohKasusRecursive2](img/contohKasusRecursive2.png)
+
+
 ### WEB STORAGE
+
+Cookie VS Local Storage VS Session Storage
+
+![Perbedaan](img/perbedaan.png)
+
+- __Cookie__
+  
+  cookie ini adalah suatu penyimpanan yang dilakukan javascript kepada browser biasanya untuk menyimpan password dan username. Data yang menggunakan cookie ini lebih dapat tersimpan dengan aman. Memakai cookie kita bisa mengatur waktunya sesuai dengan yang kita inginkan, Waktu bisa di set 1 jam hingga 1 hari bahkan 1 minggu, dan apabila browser ditutup cookie masih bisa digunakan sesuai dengan waktu yang telah ditentukan. tetapi data cookie ini akan bersifat sementara meskipun anda tidak mengatur waktunya maka secara default cookie ini akan menghapus datanya dengan waktu.
+
+  cara untuk membuat perintah penyimpanan:
+
+  ![membuatPerintahPenyimpanan](img/cookie.png) 
+
+  cara untuk mengambil perintah penyimpanan:
+
+  ![mengambilPerintahPenyimpanan](img/cookie2.png) 
+
+- __Local Storage__
+  
+   local storage adalah sebuah penyimpanan data dimana data ini akan terus ada tidak akan pernah bisa terhapus meskipun browser ditutup, komputer dimatikan, data ini bisa hilang apabila anda menjalankan perintah hapus dan browser dilakukan clear data atau cookie juga uninstall. 
+
+   ![LocalStorage](img/localStorage.png) 
+
+- __Session Storage__
+  
+  Session storage ini adalah sebuah penyimpanan data yang hanya bertahan ketika browser tidak ditutup atau tab tidak ditutup, Apabila browser ditutup maka secara otomatis data yang disimpan di session storage akan hilang. Biasanya data yang disimpan disini adalah data yang dimaksudkan agar setelah browser ditutup atau tab didutup data akan hilang. 
+
+  Biasanya adalah data login untuk perbankan, ketika anda login diweb mandiri ataupun BCA ketika anda menutup browser anda maka secara otomatis akan hilang dan anda akan diminta untuk melakukan login kembali.
+
+  ![SessionStorage](img/session%20storage.png) 
+
 ### ASYNCRONOUS
