@@ -390,3 +390,52 @@ Cookie VS Local Storage VS Session Storage
   ![SessionStorage](img/session%20storage.png) 
 
 ### ASYNCRONOUS
+
+Asynchronous hasil eksekusi atau output tidak selalu berdasarkan urutan kode, tetapi berdasarkan waktu proses. Eksekusi dengan asynchronous tidak akan membloking atau menunggu suatu perintah sampai selesai.
+
+Contoh:
+
+    console.log('Hello');
+    setTimeout(() => { console.log('Javascript')},100) // tunda selama 100 miliseconds
+    console.log('Coder');
+
+    /* ----------
+    Output :
+    Hello!
+    Coder
+    Javascipt
+    ------------*/
+
+Pada baris ke 2 setTimeout digunakan untuk menunda eksekusi dalam satuan milisecond, dalam hal ini untuk simulasi proses async.
+
+Perhatikan bahwa outputnya tidak berurutan sesuai input (kode). Karena cara kerja asynchronous adalah berdasarkan waktu proses. Jika ada salah satu eksekusi membutuhkan proses yang agak lama, maka sembari menunggu proses tersebut javascript mengeksekusi perintah selanjutnya.
+
+#### Promises
+
+Dalam dunia promise analogi di atas juga sama, ketika melakukan request asynchronous seperti Ajax, maka ada 3 kemungkinan state :
+
+- Pending ( sedang dalam proses )
+- Fulfilled ( berhasil )
+- Rejected ( gagal )
+
+Benefit utama dari promise adalah membuat code lebih readable dan manajemen error yang lebih baik.
+
+- Membuat Promises
+  
+  Untuk membuat promise cukup dengan memanggil constructor nya :
+
+  ![promises](img/promises.png)
+
+- Untuk mengatur state Fullfilled dan Reject menggunakan salah satu listener, resolve() atau reject()
+
+  ![promises](img/promise2.png)
+
+  Untuk menggunakan promise diatas gunakan method then dan catch
+
+  ![promises](img/promise3.png)
+
+  Output dari code diatas ada 2 kemungkinan,
+  - Jika comment pada resolve( ) di hapus maka hasilnya “berhasil”
+  - Jika comment pada reject( ) di hapus maka hasilnya “Janji di batalkan”
+
+  ![promises](img/promise4.png)
