@@ -64,7 +64,17 @@
 
 
 ### Responsive Web Design
-    Responsive web design adalah bertujuan untuk membuat design website kita dapat diakses dalam device apapun.
 
+Responsive web design adalah bertujuan untuk membuat design website kita dapat diakses dalam device apapun.
+
+Setiap developer website wajib menggunakan tools bawaan dari setiap browser yang dapat memudahkan development website. Pada browser chrome biasa disebut dengan chrome dev tools.
+
+cara menggunakan chrome dev toools dari RWD.
+1. Membuka browser chrome dan menggunakan shortcut ini: `ctrl+shift+j` 
+2. Klik icon yang mengilustrasikan phone dan tablet
+3. Add viewport in HTML
+4. Menggunakan elemen max-width agar panjang image menjadi overflow karena mengikuti width real bawaan dari file image. 
+5. Menggunakan media query. Jenis media query ada 2 yakni, max-width dan min width.
+6. Menggunakan Breakpoint yang merupakan perubahan yang terjadi pada tampilan saat berganti device atau ukuran width.
 
 ### Bootstrap 5
