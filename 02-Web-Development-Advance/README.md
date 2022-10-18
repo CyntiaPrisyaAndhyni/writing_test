@@ -139,3 +139,5 @@ Kegunaan bootsrap :
 - Memudahkan resize gambar, cukup dengan menambahkan class.img-responsive ke gambar, maka gambar tersebut akan otomatis di-resize sesuai ukuran layar pengguna.
 - Menambahkan elemen website tanpa ribet, Bootstrap menyediakan berbagai elemen yang bisa langsung Anda gunakan di website. Misalnya, navigasi, menu dropdown, thumbnail, dan sebagainya.
 - Membuat website lebih interaktif, Bootstrap juga memungkinkan Anda menggunakan plugin custom JQuery. Jadi, Anda bisa menambahkan berbagai elemen interaktif ke website dengan mudah. Misalnya, popup, transisi, image carousel, dan sebagainya.
+
+sumber : https://www.niagahoster.co.id/blog/bootstrap-adalah/
