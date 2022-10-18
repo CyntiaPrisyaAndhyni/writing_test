@@ -40,6 +40,21 @@ Tugas yang sangat umum di situs web dan aplikasi modern adalah mengambil item da
 
 ### Asynchronous - Async Await
 
+Async/await adalah fitur yang hadir sejak ES2017. Fitur ini mempermudah kita dalam menangani proses asynchronous. Async/Await merupakan sebuah syntax khusus yang digunakan untuk menangani Promise agar penulisan code lebih efisien dan rapih.
+Async/Await terbagi menjadi Async dan Await,contoh:
+
+    const getAllUser = async ()=> {
+        const data = await getUser()
+        console.log(data)
+    }
+
+- Async/Await adalah salah satu cara untuk mengatasai masalah asynchronous pada Javascript selain menggunakan callback dan promise.
+- Pada implementasi Async/Await, kita menggunakan kata kunci async sebelum fungsi. Await sendiri hanya bisa digunakan pada fungsi yang menggunakan async.
+- Untuk menggunakan Async/Await, kembalian dari suatu fungsi harus merupakan suatu Promise. Async/Await tidak dapat berdiri tanpa adanya Promise.
+- Tidak seperti Promise, dengan Async/Await maka suatu baris kode dapat tersusun rapi mirip dengan kode yang sifatnya synchronous.
+- Setiap baris yang menggunakan await, akan ditunggu sampai Asynchronous Promise tersebut di resolve.
+
+sumber : https://www.matawebsite.com/blog/mengenal-async-await-javascript#:~:text=Async%2Fawait%20adalah%20fitur%20yang,code%20lebih%20efisien%20dan%20rapih.
 
 
 ### Git & Github Lanjutan
