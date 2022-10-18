@@ -3,10 +3,45 @@
 ## JAVASCRIPT INTERMEDIATE
 
 ### Asynchronous - Fetch 
+Tugas yang sangat umum di situs web dan aplikasi modern adalah mengambil item data individual dari server untuk memperbarui bagian halaman web tanpa harus memuat seluruh halaman baru. Antarmuka Fetch API memungkinkan browser web membuat permintaan HTTP ke server web.
 
+- __Pengantar__
+    Halaman web terdiri dari halaman HTML dan (biasanya) berbagai file lain, seperti stylesheet, skrip, dan gambar. Model dasar pemuatan halaman di Web adalah browser Anda membuat satu atau lebih permintaan HTTP ke server untuk file yang diperlukan untuk menampilkan halaman, dan server merespons dengan file yang diminta. Jika Anda mengunjungi halaman lain, browser meminta file baru, dan server meresponsnya.
+
+    ![traditional](img/fetch.png)
+
+    Model ini bekerja dengan sangat baik untuk banyak situs. Tetapi pertimbangkan situs web yang sangat didorong oleh data. Misalnya, situs web perpustakaan seperti Perpustakaan Umum Vancouver. Antara lain Anda bisa menganggap situs seperti ini sebagai antarmuka pengguna ke database. Ini mungkin memungkinkan Anda mencari genre buku tertentu, atau mungkin menunjukkan rekomendasi untuk buku yang mungkin Anda sukai, berdasarkan buku yang Anda pinjam sebelumnya. Saat Anda melakukan ini, halaman perlu diperbarui dengan kumpulan buku baru untuk ditampilkan. Namun perhatikan bahwa sebagian besar konten halaman termasuk item seperti header halaman, sidebar, dan footer tetap sama.
+
+    Masalah dengan model tradisional di sini adalah kita harus mengambil dan memuat seluruh halaman, bahkan ketika kita hanya perlu memperbarui satu bagian saja. Ini tidak efisien dan dapat mengakibatkan pengalaman pengguna yang buruk.
+
+    Jadi, alih-alih model tradisional, banyak situs web menggunakan API JavaScript untuk meminta data dari server dan memperbarui konten halaman tanpa memuat halaman. Jadi ketika pengguna mencari produk baru, browser hanya meminta data yang diperlukan untuk memperbarui halaman misalnya kumpulan buku baru untuk ditampilkan.
+
+    ![fetch](img/fetch1.png)
+
+    API utama di sini adalah Fetch API. Ini memungkinkan JavaScript yang berjalan di halaman untuk membuat permintaan HTTP ke server untuk mengambil sumber daya tertentu. Saat server menyediakannya, JavaScript dapat menggunakan data untuk memperbarui halaman, biasanya dengan menggunakan API manipulasi DOM. Data yang diminta seringkali berupa JSON, yang merupakan format yang baik untuk mentransfer data terstruktur, tetapi bisa juga berupa HTML atau hanya teks.
+
+    Ini adalah pola umum untuk situs berbasis data seperti Amazon, YouTube, eBay, dan sebagainya. Dengan model ini:
+
+    - Pembaruan halaman jauh lebih cepat dan Anda tidak perlu menunggu halaman disegarkan, artinya situs terasa lebih cepat dan lebih responsif.
+    - Lebih sedikit data yang diunduh pada setiap pembaruan, yang berarti lebih sedikit bandwidth yang terbuang. Ini mungkin bukan masalah besar pada desktop pada koneksi broadband, tetapi ini adalah masalah besar pada perangkat seluler dan di negara-negara yang tidak memiliki layanan internet cepat di mana-mana.
+  
+    Untuk mempercepat, beberapa situs juga menyimpan aset dan data di komputer pengguna saat pertama kali diminta, yang berarti bahwa pada kunjungan berikutnya mereka menggunakan versi lokal alih-alih mengunduh salinan baru setiap kali halaman pertama kali dimuat. Konten hanya dimuat ulang dari server ketika telah diperbarui.
+
+- __Contoh__
+
+        const verseChoose = document.querySelector('select');
+        const poemDisplay = document.querySelector('pre');
+
+        verseChoose.addEventListener('change', () => {
+        const verse = verseChoose.value;
+        updateDisplay(verse);
+        });
 
 
 ### Asynchronous - Async Await
+
+
+
 ### Git & Github Lanjutan
 
 - __GIT ADD__
