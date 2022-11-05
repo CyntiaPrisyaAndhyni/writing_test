@@ -59,7 +59,60 @@
 - Untuk memanggil data dari id terbesar
   ![](img/desc.png)
 
-
 ## MySQL Lanjutan
+- Tipe-tipe Relasi
+  1. One to one : 1 entitas, cuma boleh memiliki 1 entitas yang lain. Contoh : 1 buku memiliki 1 ISBN atau 1 ISBN dimiliki oleh 1 buku.
+  2. One to many : 1 entitas punya banyak relasi. Contoh : 1 penerbit bisa menerbitkan banyak buku.
+  3. Many to many : akan muncul conjunction tambahan ditengah-tengahnya.
+- Normalisasi 
+  Digunakan apabila terjadi anomali pada data. contohnya adalah Pada saat kita telah menghapus suatu data, maka data akan menjadi aneh. Atau pada saat data diupdate, data menjadi tidak sesuai.
+- Key
+  1. Primary Key : identitas dari sebuah row / record yang bersifat unik dan not null.
+  2. Unique : data  yang bersifat unik (data dapat bersifat null atau kosong).
+  3. Foreign Key : Primary key yang ikut pada tabel lain.
+- JOIN 
+  Seperti Himpunan, yang digunakan untuk menampilkan data dari foreign key. Terdiri dari:
+  1. Right Join : menampilkan semua data yang ada disebelah kanan (meskipun tidak ada relasi).
+  2. Inner Join : menampilkan data produk yang memiliki irisan dengan category (mempunyai relasi).
+  3. Left Join : mengambil mayoritas data dari tabel produk bagian kiri.
+- Demo MySQL
+  1. Membuat database store, dapat menggunakan query create database.
+  2. Menggunakan database store, dapat menggunakan query use.
+  3. Membuat table category dan product dengan menggunakan query create table.
+     ![](img/create%20table%20category%20n%20product.png)
+  4. Mengisi data category dan product dengan menggunakan query insert into.
+  5. Isi data tabel category
+     ![](img/data%20tabel%20category.png)
+  6. Isi data tabel product
+     ![](img/isi%20product.png)
+  7. Menampilkan tabel produk, namun atribut category_id diubah menjadi name category.
+     ![](img/category%20id%20menjadi%20name.png)
+  8. Menampilkan semua data meskipun ada yang tidak berelasi
+     ![](img/right%20join.png)
+- Aggregate Function
+  - Count() : untuk menghitung berapa banyak data yang dicari
+    contoh :
+    ![](img/count.png)
+  - Sum() : untuk menjumlahkan atau mengakumulasikan data
+    contoh :
+    ![](img/sum.png)
+  - Average() : untuk menghitung rata-rata
+    contoh :
+    ![](img/avg.png)
+  - Min() : untuk mencari nilai minimum atau terendah
+    contoh :
+    ![](img/min.png)
+  - Max() : untuk mencari nilai maximum atau tertinggi
+    contoh :
+    ![](img/max.png)
+- Menampilkan jumlah setiap category 
+  ![](img/percobaan.png)
+-Perbedaan Having vs Where
+  - Where : tertuju pada nama kolom dalam menentukan pencarian
+  - Having : nama kolom yang sudah diubah menjadi alias dapat menggunakan having untuk menentukan pencarian data 
+     
+ 
+
+
 ## Authentication & Authorization in Express
 ## Sequalize
