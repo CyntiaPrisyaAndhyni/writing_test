@@ -170,4 +170,28 @@
   - Having : nama kolom yang sudah diubah menjadi alias dapat menggunakan having untuk menentukan pencarian data. 
      
 ## Authentication & Authorization in Express
+
+- Autentikasi/Authentication : untuk mengecek data, contohnya proses login.
+  proses dimana seorang user (melalui berbagai macam akses fisik berupa komputer dll) mendapatkan hak akses kepada suatu entity.
+- Autorisasi/Authorization : untuk mengecek hak akses, contohnya untuk masuk ke data users.
+  proses penentuan apakah user tersebut diizinkan / ditolak untuk melakukan satu atau beberapa action akses terhadap resources tertentu dalam sistem.
+- Encryption : mengubah kata menjadi sebuah kode.
+- Decryption : mengembalikan kode menjadi kata.
+  
+  ![](img/encryp&decryp.png)
+
+- JWT
+  JSON Web Token adalah sebuah JSON Object yang didefinisikan dalam RFC 7519 sebagai cara aman untuk mewakili sekumpulan informasi antara dua pihak. Token terdiri dari Header, Content, dan Signature.
+
+  ![](img/jwt.png)
+
+
 ## Sequalize
+- Sequelize adalah ORM (Object Relational Mapping) Node JS yang berbasis promise. Sequelize mendukung sebagian besar relational Database seperti MySQL, PostgresQL, MariaDB, SQLite dan Miscrosoft SQL Server.
+- ORM adalah suatu metode/teknik pemrograman yang digunakan untuk mengkonversi data dari lingkungan bahasa pemrograman berorientasi objek (OOP) dengan lingkungan database relational.  
+- Kelebihan ORM
+  - memisahkan kode sql dari logic aplikasi
+  - mempermudah maintenance
+  - menghindari ketergantungan aplikasi terhadap vendor database
+- Kekurangan ORM
+  - kalah cepat dengan query secara manual
