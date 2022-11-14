@@ -40,6 +40,30 @@ Installation Sequelize
 
         npx sequelize seed:create --name demo-user
 
+## Postman
+
+- Postman adalah tools yang bisa digunakan untuk menguji sebuah API.
+- Postman memiliki graphical user interface (GUI) sehingga dapat digunakan dan dipahami oleh backend developer.
+- Postman bisa di download secara gratis dan dapat berjalan pada sistem operasi Windows, Linux, maupun macOS.
+- Ada beberapa komponen UI basic yang harus kita pahami untuk memulai menggunakan Postman sebagai tool pengujian REST API. Beberapa Komponent tersebut, adalah sebagai berikut :
+  - Request Tab : merupakan tab dari halaman request.
+  - Method Path Request : digunakan untuk menentukan method dan path dari request yang akan dilakukan.
+  - HTTP Method Selector : Postman mendukung seluruh method yang ada di HTTP Request.
+  - Request Options : digunakan untuk menyisipkan data dalam bentuk params URL, authorization, Headers, Body, dan lainnya.
+  - Response : Response dari server akan ditampilkan secara terformat sesuai dengan Content-Type yang diberikan server.
+- Postman Collection
+  - Postman collection adalah tempat menyimpan kumpulan-kumpulan request.
+  - Kita bisa menganggap collection adalah sebuah folder yang menyimpan berkas, namun berkas yang akan disimpan itu adalah request.
+  - Dengan adanya collection request bisa Anda kelompokkan sehingga lebih mudah untuk diakses.
+- Postman Environment
+  - Postman Environment merupakan kumpulan dari variabel yang dapat digunakan pada request di Postman.
+
+
+ 
+
+
+
+
 
 ## MongoDB
 
